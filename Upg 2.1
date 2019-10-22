@@ -1,0 +1,60 @@
+package com.company;
+
+import javafx.scene.effect.Light;
+
+import java.lang.invoke.SwitchPoint;
+import java.net.SocketOption;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        String username = "falken";
+        String password = "joshua";
+        String passwordcheck = "";
+        String usernamecheck = "";
+        int i = 0;
+        int a = 1;
+        int u = 0;
+
+
+        while (u < 5) {
+
+            System.out.print("Enter username");
+            usernamecheck = scanner.nextLine();
+
+            if (usernamecheck.equals(username)) {
+                u = 5;
+            }
+
+            if (!usernamecheck.equals(username))
+            {
+                System.out.print("enter a correct username");
+                u++;
+                System.out.print("You have entered a incorrect username 5 times and will be arrested");
+            }
+        }
+        while (i < 3) {
+            System.out.print("Please enter the password");
+            passwordcheck = scanner.nextLine();
+
+            if (passwordcheck.equals(password)) {
+                System.out.print("Correct, welcome in falken.");
+                i = 3;
+            }
+            if (!passwordcheck.equals(password)) {
+                System.out.print("Incorrect \n");
+                i++;
+                a++;
+            }
+            if (a > 3) {
+                System.out.print("You have failed to type the correct password, you have been locked out");
+            }
+
+
+        }
+    }
+}
