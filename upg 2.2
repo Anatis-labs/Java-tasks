@@ -1,0 +1,54 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class upg2 {
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+        int A = 100;
+        int B = 140;
+        int C = 200;
+        int VIP = 100;
+        int ticketchoice = 0;
+        boolean ticket = false;
+        String tickettype = "";
+        String vipquestion = "";
+
+
+        System.out.print("Please enter what type of ticket you would like.");
+        tickettype = scanner.nextLine();
+
+
+        if (tickettype.equals("A")) {
+            ticketchoice = A;
+        }
+
+        if (tickettype.equals("B")) {
+            ticketchoice = B;
+        }
+
+        if (tickettype.equals("C")) {
+
+            System.out.print("Do you want to upgrade to VIP ticket?? \t Type yes or no");
+            vipquestion = scanner.nextLine();
+
+            if (vipquestion.equals("yes")) {
+                ticketchoice = (C + VIP);
+                ticket = true;
+            }
+            if (vipquestion.equals("no")) {
+                ticketchoice = C;
+            }
+
+        } else {
+            System.out.print("The tickets cant be combined that way");
+        }
+        if (ticket = false) {
+            System.out.printf("The ticket price for your ticket of choice is %s ", ticketchoice);
+        }
+        if (ticket = true) {
+            System.out.printf("The ticket price for the ticket is %s, since u chose vip ", ticketchoice);
+        }
+    }
+}
