@@ -1,23 +1,21 @@
 package com.company;
-
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
-
 public class upg3 {
-
 
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         int random = ThreadLocalRandom.current().nextInt(1, 100);
         int guess = 0;
-        boolean game = false;
+        int attempts = 0;
         System.out.print("Guess the number between 1 and 99.");
 
-        while (game == false) {
+        while (attempts < 6) {
 
             try {
                 guess = scanner.nextInt();
+                attempts++;
             }
 
             catch (ArithmeticException ex) {
@@ -31,7 +29,7 @@ public class upg3 {
             }
             if (guess == random) {
                 System.out.print("Grats, you did it!");
-                game = true;
+                attempts = 5;
             }
         }
     }
