@@ -1,0 +1,98 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        //upg 4.1
+     /*
+        {
+            // write your code here
+
+            for (int i = 0; i <= 20; i += 4) {
+                System.out.println(i);
+            }
+        }
+    */
+
+        //upg 4.2
+        /*
+        {
+            int x = 5;
+            int y = 3;
+
+            for (int i = 0; i < x; i++) {
+                System.out.println("");
+
+                for (int u = 0; u < y; u++) {
+                    System.out.print("o");
+
+                }
+            }
+        }
+        */
+
+
+        /*
+        //upg 4.3
+        {
+            int x = 10;
+            int y = 10;
+
+            for (int i = 0; i < x; i++ ){
+                System.out.println("");
+
+
+                for (int u = 0; u < y; u++){
+                    System.out.printf("%02d ", u+i*10);
+
+
+
+                }
+
+            }
+
+
+        }
+        */
+/*
+        {
+            int x = 10;
+
+            for (int i = 0; i < x; i++){
+                System.out.println("");
+                for (int u=0; u < i; u++) {
+                    System.out.print(i);
+                    if (u==8){
+                        System.out.println(" Awesome");
+                    }
+                }
+
+            }
+
+
+        }
+*/
+/*
+        {
+            int x = 5;
+            int y = 10;
+
+            for (int i = 0; i < x; i++ ){
+                System.out.println("");
+
+
+                for (int u = 0; u < y; u++){
+                    System.out.printf("%02d ", u*5+i);
+
+
+
+                }
+
+            }
+
+
+        }
+    */
+    }
+}
