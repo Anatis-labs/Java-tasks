@@ -1,6 +1,6 @@
- static int getInteger(String text) {
+    static int getInteger(String text) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Please enter a number");
+        System.out.print(text);
         int number=0;
         while (true) {
 
@@ -18,7 +18,7 @@
 
     public static void main(String[] args) {
 
-        int value = getInteger("greger");
+        int value = getInteger("Please enter a number");
         System.out.printf("Your number is %s.", value);
     }
 }
