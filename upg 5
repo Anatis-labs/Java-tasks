@@ -1,0 +1,24 @@
+ static int getInteger(String text) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please enter a number");
+        int number=0;
+        while (true) {
+
+            try {
+                number = scanner.nextInt();
+                break; }
+
+            catch (InputMismatchException ex) {
+                System.out.println("please enter a number, not a fucking letter");
+                scanner.next();
+            }
+        }
+        return number;
+    }
+
+    public static void main(String[] args) {
+
+        int value = getInteger("greger");
+        System.out.printf("Your number is %s.", value);
+    }
+}
