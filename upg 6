@@ -1,0 +1,55 @@
+ static int getInteger(String text){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(text);
+        int number=0;
+        int range=0;
+        while (true) {
+
+            try {
+                number = scanner.nextInt();
+                break;
+            }
+
+            catch (InputMismatchException ex) {
+                System.out.println("please enter a number, not a fucking letter");
+                scanner.next();
+            }
+
+        }
+        return number;
+    }
+
+    static int getInteger(String text, int min, int max) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(text);
+        int number=0;
+        while (true) {
+
+            try {
+                number = scanner.nextInt();
+            }
+
+            catch (InputMismatchException ex) {
+                System.out.println("please enter a number, not a fucking letter");
+                scanner.next();
+            }
+
+            if (number <= max && number >= min)
+                break;
+            else {
+                System.out.printf("enter a number between %s and %s", min,max);
+            }
+        }
+        return number;
+    }
+
+    public static void main(String[] args) {
+
+        int number = getInteger("Type any number you want: ");
+        int range  = getInteger("Type a number between 1 and 5: ", 1, 5);
+
+        System.out.printf("Your number is %s.", number);
+        System.out.printf("Your number is %s.", range);
+    }
+}
+
