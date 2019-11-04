@@ -22,3 +22,40 @@
         System.out.printf("Your number is %s.", value);
     }
 }
+
+
+/*
+5.3
+
+    static int getInteger(String text, int min, int max) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print(text);
+        int number=0;
+        while (true) {
+
+            try {
+                number = scanner.nextInt();
+            }
+
+            catch (InputMismatchException ex) {
+                System.out.println("please enter a number, not a fucking letter");
+                scanner.next();
+            }
+
+            if (number <= max && number >= min)
+                break;
+            else {
+                System.out.println("enter a number between 1 and 100");
+            }
+
+        }
+        return number;
+    }
+
+    public static void main(String[] args) {
+
+        int value = getInteger("Please enter a number",1,100);
+        System.out.printf("Your number is %s.", value);
+    }
+}
+*/
