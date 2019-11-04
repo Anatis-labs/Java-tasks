@@ -1,4 +1,15 @@
-    static int getInteger(String text) {
+package com.company;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+
+
+// 6.1 not completed
+/*
+
+static int getInteger(String text) {
         Scanner scanner = new Scanner(System.in);
         System.out.print(text);
         int number = 0;
@@ -48,3 +59,30 @@
         System.out.printf("Your number is %s.", range);
     }
 }
+*/
+
+// 6-3 completed
+/*
+    static String textfixer(String text) {
+        
+        int test = text.length();
+        String t1 = text.substring(1, (test)).toLowerCase();
+        String t2 = text.substring(0, 1).toUpperCase();
+        return (t2 + t1);
+
+    }
+
+    public static void main(String[] args) {
+        Scanner textscanner = new Scanner(System.in);
+        System.out.println("Enter a name or a word, up to u");
+        String text = textscanner.next();
+        String fixedtext = textfixer(text);
+
+        System.out.println(fixedtext);
+
+    }
+}
+*/
+
+
+
