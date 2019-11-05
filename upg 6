@@ -85,12 +85,9 @@ static int getInteger(String text) {
 */
 
 /*
-    static String reverser(String toBeReversed) {
-
-
-        String reverse = "1dds/ved/ tnuomnu";
-
-        StringBuilder sb = new StringBuilder(reverse);
+     static String reverser(String toBeReversed) {
+        
+        StringBuilder sb = new StringBuilder(toBeReversed);
         System.out.println("Reversed string is:");
 
 
@@ -100,7 +97,7 @@ static int getInteger(String text) {
     public static void main(String[] args) {
         System.out.println("Gonna reverse the text entered");
 
-        String reversetext = reverser("text");
+        String reversetext = reverser("1dds/ved/ tnuomnu");
         System.out.println(reversetext);
     }
 }
