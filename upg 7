@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class Main {
 
-
+/*
 static int countReports(String[] filelist) {
         int count = filelist.length;
         int test = 0;
@@ -32,3 +32,45 @@ static int countReports(String[] filelist) {
         System.out.println("Number of T.P.S. reports submitted = " + reports);
     }
 }
+*/
+
+7.2
+/*
+    static String[] getReports(String[] filenames) {
+        int i = 0;
+        String[] output = new String[10];
+
+        for (i = 0; i < filenames.length; i++) {
+            if (filenames[i].contains("TPS Report")) {
+                output[i] = filenames[i];
+                System.out.println(filenames[i]);
+            }
+            else {
+                //does nothing
+            }
+        }
+
+
+        return output;
+}
+
+    public static void main(String[] args) {
+        int i = 0;
+        int count = 0;
+        String[] filenames = new String[]{
+                "Balance Report.txt",
+                "TPS Report-311.pdf",
+                "TPS Report-241.pdf",
+                "photos.zip",
+                "printer_instructions.txt",
+                "TPS Report-623.pdf",
+        };
+        String[] reports = getReports(filenames);
+        int test = reports.length;
+        for (i = 0; i < reports.length; i++) {
+            System.out.println("Number of T.P.S. reports submitted = " + reports[count]);
+            count = count + 1;
+        }
+    }
+}
+*/
