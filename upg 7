@@ -1,0 +1,34 @@
+package com.company;
+import javax.swing.*;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Main {
+
+
+static int countReports(String[] filelist) {
+        int count = filelist.length;
+        int test = 0;
+        int i;
+        for (i = 0; i < filelist.length; i++) {
+            if (filelist[i].contains("TPS")) {
+                test = test + 1;
+            }
+        }
+        return test;
+    }
+
+    public static void main(String[] args) {
+        String[] filenames = new String[]{
+                "Balance Report.txt",
+                "TPS Report-311.pdf",
+                "TPS Report-241.pdf",
+                "photos.zip",
+                "printer_instructions.txt",
+                "TPS Report-623.pdf",
+        };
+
+        int reports = countReports(filenames);
+        System.out.println("Number of T.P.S. reports submitted = " + reports);
+    }
+}
